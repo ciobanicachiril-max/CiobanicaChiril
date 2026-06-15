@@ -1,261 +1,299 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicii – Biblioteca Cahul</title>
-  <link rel="stylesheet" href="css/servicii.css" />
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicii – Biblioteca Cahul</title>
+    <link rel="stylesheet" href="css/servicii.css" />
+  </head>
+  <body>
 
-<header class="navbar">
+  <header class="navbar">
 
-  <a href="#" class="navbar__logo">
-  <img src="logo-biblioteca.png" alt="Logo Biblioteca Cahul" class="navbar__logo-img" />
-</a>
+    <a href="#" class="navbar__logo">
+    <img src="logo-biblioteca.png" alt="Logo Biblioteca Cahul" class="navbar__logo-img" />
+  </a>
 
-  <nav class="navbar__nav">
-    <a href="index.html">Home</a>
-    <a href="catalog.html">Catalog Cărți</a>
-    <a href="servicii.html" class="active">Servicii</a>
-    <a href="evenimente.html">Evenimente</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav class="navbar__nav">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog Cărți</a>
+      <a href="servicii.html" class="active">Servicii</a>
+      <a href="evenimente.html">Evenimente</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <div class="navbar__search">
-    <input type="text" placeholder="Caută…" />
-    <button aria-label="Caută">
-      <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l4.38 4.38-1.41 1.41-4.38-4.38zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" clip-rule="evenodd"/>
+    <div class="navbar__search">
+      <input type="text" placeholder="Caută…" />
+      <button aria-label="Caută">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l4.38 4.38-1.41 1.41-4.38-4.38zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <section class="page-hero">
+    <h1>Serviciile noastre</h1>
+    <p>Suntem aici pentru tine și comunitatea ta</p>
+  </section>
+
+  <section class="services">
+    <div class="services__grid">
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 10 C26 10 13 6 6 10 L6 42 C13 38 26 42 26 42 C26 42 39 38 46 42 L46 10 C39 6 26 10 26 10Z"/>
+            <line x1="26" y1="10" x2="26" y2="42"/>
+          </svg>
+        </div>
+        <h3>Împrumut cărți</h3>
+        <p>Împrumută cărți pentru acasă pe o perioadă stabilită.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="18"/>
+            <path d="M26 26 L26 12"/>
+            <path d="M26 26 L38 26"/>
+            <path d="M26 8 A18 18 0 0 1 44 26" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <h3>Sală de lectură</h3>
+        <p>Spații moderne și liniștite pentru studiu individual.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 22 Q26 6 44 22" stroke-linecap="round"/>
+            <path d="M13 29 Q26 16 39 29" stroke-linecap="round"/>
+            <path d="M19 36 Q26 28 33 36" stroke-linecap="round"/>
+            <circle cx="26" cy="42" r="2.5" fill="#0d1b2e" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Internet gratuit</h3>
+        <p>Acces la internet și calculatoare pentru documentare.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="18"/>
+            <line x1="26" y1="24" x2="26" y2="36" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="26" cy="18" r="2" fill="#0d1b2e" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Activități educative</h3>
+        <p>Participă la cursuri, conferințe și ateliere.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="schedule-form">
+
+    <div class="schedule">
+      <h2>Programul bibliotecii</h2>
+      <div class="schedule__list">
+        <div class="schedule__item">
+          <span class="day">Luni — Vineri:</span>
+          <span class="hours">09:00 — 18:00</span>
+        </div>
+        <div class="schedule__item">
+          <span class="day">Sâmbătă:</span>
+          <span class="hours">10:00 — 16:00</span>
+        </div>
+        <div class="schedule__item">
+          <span class="day">Duminică:</span>
+          <span class="hours">Închis</span>
+        </div>
+        <div class="schedule__item">
+          <span class="day">Program special în</span>
+          <span class="hours">zilele de sărbătoare</span>
+        </div>
+      </div>
+
+      <svg class="schedule__clock" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="120" r="114" fill="#f2f2f2" stroke="#ddd" stroke-width="2"/>
+        <circle cx="120" cy="120" r="104" fill="#fff" stroke="#e4e4e4" stroke-width="1"/>
+        <line x1="120" y1="18"  x2="120" y2="32"  stroke="#444" stroke-width="3"   stroke-linecap="round"/>
+        <line x1="222" y1="120" x2="208" y2="120" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
+        <line x1="120" y1="222" x2="120" y2="208" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
+        <line x1="18"  y1="120" x2="32"  y2="120" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
+        <line x1="171" y1="26.4" x2="164" y2="38.5" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="213.6" y1="69" x2="201.5" y2="76" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="213.6" y1="171" x2="201.5" y2="164" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="171" y1="213.6" x2="164" y2="201.5" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="69"  y1="213.6" x2="76"  y2="201.5" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="26.4" y1="171" x2="38.5" y2="164" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="26.4" y1="69"  x2="38.5" y2="76"  stroke="#bbb" stroke-width="1.5"/>
+        <line x1="69"  y1="26.4" x2="76"  y2="38.5" stroke="#bbb" stroke-width="1.5"/>
+
+        <text x="120" y="48"  text-anchor="middle" font-size="16" font-family="Arial" fill="#333">12</text>
+        <text x="196" y="126" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">3</text>
+        <text x="120" y="204" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">6</text>
+        <text x="44"  y="126" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">9</text>
+        <text x="155" y="55"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">1</text>
+        <text x="187" y="87"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">2</text>
+        <text x="187" y="158" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">4</text>
+        <text x="155" y="192" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">5</text>
+        <text x="84"  y="192" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">7</text>
+        <text x="52"  y="158" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">8</text>
+        <text x="52"  y="87"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">10</text>
+        <text x="84"  y="55"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">11</text>
+
+        <line x1="120" y1="120" x2="86"  y2="74"  stroke="#1a1a2e" stroke-width="5"   stroke-linecap="round"/>
+
+        <line x1="120" y1="120" x2="152" y2="62"  stroke="#333"    stroke-width="3"   stroke-linecap="round"/>
+    
+        <line x1="120" y1="120" x2="128" y2="176" stroke="#c8922a" stroke-width="1.8" stroke-linecap="round"/>
+
+        <circle cx="120" cy="120" r="6" fill="#1a1a2e"/>
+        <circle cx="120" cy="120" r="2.5" fill="#fff"/>
       </svg>
-    </button>
+    </div>
+
+    <form
+  class="reader-form"
+  action="https://api.sheetmonkey.io/form/x7144aUy2bgkZtvPmqAtgN"
+  method="POST"
+>
+  <h2>Cerere card cititor</h2>
+
+  <p class="sub">
+    Completează formularul pentru a obține cardul de cititor
+  </p>
+
+  <div class="field">
+    <input
+      type="text"
+      name="Nume complet"
+      placeholder="Nume complet"
+      required
+    />
   </div>
 
-</header>
+  <div class="field">
+    <input
+      type="date"
+      name="Data nașterii"
+      required
+    />
 
-<section class="page-hero">
-  <h1>Serviciile noastre</h1>
-  <p>Suntem aici pentru tine și comunitatea ta</p>
-</section>
-
-<section class="services">
-  <div class="services__grid">
-
-    <div class="service-card">
-      <div class="service-card__icon">
-        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-          <path d="M26 10 C26 10 13 6 6 10 L6 42 C13 38 26 42 26 42 C26 42 39 38 46 42 L46 10 C39 6 26 10 26 10Z"/>
-          <line x1="26" y1="10" x2="26" y2="42"/>
-        </svg>
-      </div>
-      <h3>Împrumut cărți</h3>
-      <p>Împrumută cărți pentru acasă pe o perioadă stabilită.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-card__icon">
-        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="26" cy="26" r="18"/>
-          <path d="M26 26 L26 12"/>
-          <path d="M26 26 L38 26"/>
-          <path d="M26 8 A18 18 0 0 1 44 26" stroke-width="2.2"/>
-        </svg>
-      </div>
-      <h3>Sală de lectură</h3>
-      <p>Spații moderne și liniștite pentru studiu individual.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-card__icon">
-        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 22 Q26 6 44 22" stroke-linecap="round"/>
-          <path d="M13 29 Q26 16 39 29" stroke-linecap="round"/>
-          <path d="M19 36 Q26 28 33 36" stroke-linecap="round"/>
-          <circle cx="26" cy="42" r="2.5" fill="#0d1b2e" stroke="none"/>
-        </svg>
-      </div>
-      <h3>Internet gratuit</h3>
-      <p>Acces la internet și calculatoare pentru documentare.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-card__icon">
-        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="26" cy="26" r="18"/>
-          <line x1="26" y1="24" x2="26" y2="36" stroke-width="2.2" stroke-linecap="round"/>
-          <circle cx="26" cy="18" r="2" fill="#0d1b2e" stroke="none"/>
-        </svg>
-      </div>
-      <h3>Activități educative</h3>
-      <p>Participă la cursuri, conferințe și ateliere.</p>
-    </div>
-
-  </div>
-</section>
-
-<div class="schedule-form">
-
-  <div class="schedule">
-    <h2>Programul bibliotecii</h2>
-    <div class="schedule__list">
-      <div class="schedule__item">
-        <span class="day">Luni — Vineri:</span>
-        <span class="hours">09:00 — 18:00</span>
-      </div>
-      <div class="schedule__item">
-        <span class="day">Sâmbătă:</span>
-        <span class="hours">10:00 — 16:00</span>
-      </div>
-      <div class="schedule__item">
-        <span class="day">Duminică:</span>
-        <span class="hours">Închis</span>
-      </div>
-      <div class="schedule__item">
-        <span class="day">Program special în</span>
-        <span class="hours">zilele de sărbătoare</span>
-      </div>
-    </div>
-
-    <svg class="schedule__clock" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="120" cy="120" r="114" fill="#f2f2f2" stroke="#ddd" stroke-width="2"/>
-      <circle cx="120" cy="120" r="104" fill="#fff" stroke="#e4e4e4" stroke-width="1"/>
-      <line x1="120" y1="18"  x2="120" y2="32"  stroke="#444" stroke-width="3"   stroke-linecap="round"/>
-      <line x1="222" y1="120" x2="208" y2="120" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
-      <line x1="120" y1="222" x2="120" y2="208" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
-      <line x1="18"  y1="120" x2="32"  y2="120" stroke="#444" stroke-width="3"   stroke-linecap="round"/>
-      <line x1="171" y1="26.4" x2="164" y2="38.5" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="213.6" y1="69" x2="201.5" y2="76" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="213.6" y1="171" x2="201.5" y2="164" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="171" y1="213.6" x2="164" y2="201.5" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="69"  y1="213.6" x2="76"  y2="201.5" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="26.4" y1="171" x2="38.5" y2="164" stroke="#bbb" stroke-width="1.5"/>
-      <line x1="26.4" y1="69"  x2="38.5" y2="76"  stroke="#bbb" stroke-width="1.5"/>
-      <line x1="69"  y1="26.4" x2="76"  y2="38.5" stroke="#bbb" stroke-width="1.5"/>
-
-      <text x="120" y="48"  text-anchor="middle" font-size="16" font-family="Arial" fill="#333">12</text>
-      <text x="196" y="126" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">3</text>
-      <text x="120" y="204" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">6</text>
-      <text x="44"  y="126" text-anchor="middle" font-size="16" font-family="Arial" fill="#333">9</text>
-      <text x="155" y="55"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">1</text>
-      <text x="187" y="87"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">2</text>
-      <text x="187" y="158" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">4</text>
-      <text x="155" y="192" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">5</text>
-      <text x="84"  y="192" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">7</text>
-      <text x="52"  y="158" text-anchor="middle" font-size="12" font-family="Arial" fill="#888">8</text>
-      <text x="52"  y="87"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">10</text>
-      <text x="84"  y="55"  text-anchor="middle" font-size="12" font-family="Arial" fill="#888">11</text>
-
-      <line x1="120" y1="120" x2="86"  y2="74"  stroke="#1a1a2e" stroke-width="5"   stroke-linecap="round"/>
-
-      <line x1="120" y1="120" x2="152" y2="62"  stroke="#333"    stroke-width="3"   stroke-linecap="round"/>
-  
-      <line x1="120" y1="120" x2="128" y2="176" stroke="#c8922a" stroke-width="1.8" stroke-linecap="round"/>
-
-      <circle cx="120" cy="120" r="6" fill="#1a1a2e"/>
-      <circle cx="120" cy="120" r="2.5" fill="#fff"/>
-    </svg>
+    <span class="field__cal">
+      <svg viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+    </span>
   </div>
 
-  <div class="reader-form">
-    <h2>Cerere card cititor</h2>
-    <p class="sub">Completează formularul pentru a obține cardul de cititor</p>
-
-    <div class="field">
-      <input type="text" placeholder="Nume complet" />
-    </div>
-    <div class="field">
-      <input type="text" placeholder="Data nașterii" />
-      <span class="field__cal">
-        <svg viewBox="0 0 24 24">
-          <rect x="3" y="4" width="18" height="18" rx="2"/>
-          <line x1="16" y1="2" x2="16" y2="6"/>
-          <line x1="8"  y1="2" x2="8"  y2="6"/>
-          <line x1="3"  y1="10" x2="21" y2="10"/>
-        </svg>
-      </span>
-    </div>
-    <div class="field">
-      <input type="tel" placeholder="Telefon" />
-    </div>
-    <div class="field">
-      <input type="email" placeholder="Email" />
-    </div>
-
-    <button class="btn btn--gold">Trimite cererea</button>
+  <div class="field">
+    <input
+      type="tel"
+      name="Telefon"
+      placeholder="Telefon"
+      required
+    />
   </div>
 
-</div>
+  <div class="field">
+    <input
+      type="email"
+      name="Email"
+      placeholder="Email"
+      required
+    />
+  </div>
 
-<footer>
-  <div class="footer__inner">
+  <input
+    type="hidden"
+    name="Tip formular"
+    value="Cerere card cititor"
+  />
 
+  <button type="submit" class="btn btn--gold">
+    Trimite cererea
+  </button>
+</form>
+
+  </div>
+
+  <footer>
     <div class="footer__inner">
 
-    <div class="footer__brand">
-      <div class="logo-text">
-        <img src="logo-biblioteca.png" alt="Logo" style="width:40px;height:40px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;">
-            Biblioteca Cahul
-          </div>
-      <div class="tagline">Cunoaște. Citește. <span>Inspiră-te.</span></div>
-    </div>
+      <div class="footer__inner">
 
-    <div class="footer__col">
-      <h4>Meniu</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="catalog.html">Catalog Cărți</a></li>
-        <li><a href="servicii.html" class="active">Servicii</a></li>
-        <li><a href="evenimente.html">Evenimente</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <h4>Servicii:</h4>
-      <ul>
-        <li><a href="#">Împrumut cărți</a></li>
-        <li><a href="#">Sală de lectură</a></li>
-        <li><a href="#">Internet gratuit</a></li>
-        <li><a href="#">Activități educative</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <h4>Program:</h4>
-      <p>
-        Luni – Vineri: 09:00 – 18:00<br>
-        Sâmbătă: 10:00 – 16:00<br>
-        Duminică: Închis
-      </p>
-    </div>
-
-    <div class="footer__col">
-      <h4>Contact:</h4>
-      <div class="contact-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-        </svg>
-        Str. Mihai Frunze 2, Cahul
+      <div class="footer__brand">
+        <div class="logo-text">
+          <img src="logo-biblioteca.png" alt="Logo" style="width:40px;height:40px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;">
+              Biblioteca Cahul
+            </div>
+        <div class="tagline">Cunoaște. Citește. <span>Inspiră-te.</span></div>
       </div>
-      <div class="contact-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        +373 299 25 234
+
+      <div class="footer__col">
+        <h4>Meniu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog Cărți</a></li>
+          <li><a href="servicii.html" class="active">Servicii</a></li>
+          <li><a href="evenimente.html">Evenimente</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <div class="contact-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-        </svg>
-        biblioteca.cahul@example.md
+
+      <div class="footer__col">
+        <h4>Servicii:</h4>
+        <ul>
+          <li><a href="#">Împrumut cărți</a></li>
+          <li><a href="#">Sală de lectură</a></li>
+          <li><a href="#">Internet gratuit</a></li>
+          <li><a href="#">Activități educative</a></li>
+        </ul>
       </div>
+
+      <div class="footer__col">
+        <h4>Program:</h4>
+        <p>
+          Luni – Vineri: 09:00 – 18:00<br>
+          Sâmbătă: 10:00 – 16:00<br>
+          Duminică: Închis
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact:</h4>
+        <div class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Str. Mihai Frunze 2, Cahul
+        </div>
+        <div class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +373 299 25 234
+        </div>
+        <div class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+          biblioteca.cahul@example.md
+        </div>
+      </div>
+
     </div>
+    <div class="footer__bottom">
+      © 2024 Biblioteca Cahul. Toate drepturile rezervate.
+    </div>
+  </footer>
 
-  </div>
-  <div class="footer__bottom">
-    © 2024 Biblioteca Cahul. Toate drepturile rezervate.
-  </div>
-</footer>
-
-</body>
-</html>
+  </body>
+  </html>
