@@ -83,15 +83,58 @@
     </div>
 
     <div class="contact-card">
-      <h3>Formular contact</h3>
-      <div class="contact-form">
-        <input type="text" placeholder="Nume complet" class="contact-input" />
-        <input type="email" placeholder="Email" class="contact-input" />
-        <input type="text" placeholder="Subiect" class="contact-input" />
-        <textarea placeholder="Mesajul tău" class="contact-textarea" rows="5"></textarea>
-        <button class="btn btn--navy contact-submit">Trimite mesajul</button>
-      </div>
-    </div>
+  <h3>Formular contact</h3>
+
+  <form
+    action="https://api.sheetmonkey.io/form/x7144aUy2bgkZtvPmqAtgN"
+    method="POST"
+    class="contact-form"
+  >
+
+    <input
+      type="text"
+      name="Nume"
+      placeholder="Nume complet"
+      class="contact-input"
+      required
+    />
+
+    <input
+      type="email"
+      name="Email"
+      placeholder="Email"
+      class="contact-input"
+      required
+    />
+
+    <input
+      type="text"
+      name="Subiect"
+      placeholder="Subiect"
+      class="contact-input"
+      required
+    />
+
+    <textarea
+      name="Mesaj"
+      placeholder="Mesajul tău"
+      class="contact-textarea"
+      rows="5"
+      required
+    ></textarea>
+
+    <input
+      type="hidden"
+      name="Pagina"
+      value="Contact"
+    />
+
+    <button type="submit" class="btn btn--navy contact-submit">
+      Trimite mesajul
+    </button>
+
+  </form>
+</div>
 
     <div class="contact-card contact-card--map">
       <h3>Unde ne găsești</h3>
