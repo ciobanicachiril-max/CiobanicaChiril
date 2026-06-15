@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evenimente – Biblioteca Cahul</title>
+  <link rel="stylesheet" href="css/evenimente.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#" class="navbar__logo">
+  <img src="logo-biblioteca.png" alt="Logo Biblioteca Cahul" class="navbar__logo-img" />
+  <nav class="navbar__nav">
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog Cărți</a>
+    <a href="servicii.html">Servicii</a>
+    <a href="evenimente.html" class="active">Evenimente</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="navbar__search">
+    <input type="text" placeholder="Caută…" />
+    <button aria-label="Caută">
+      <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l4.38 4.38-1.41 1.41-4.38-4.38zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Evenimente</h1>
+  <p>Descoperă activități pregătite pentru tine</p>
+</section>
+
+<div class="events-main">
+
+  <div class="panel">
+    <div class="panel__title">Evenimente viitoare</div>
+    <div class="event-list">
+
+      <div class="event-item">
+        <div class="event-item__date">
+          <span class="event-item__day">25</span>
+          <span class="event-item__month">Mai</span>
+        </div>
+        <div class="event-item__body">
+          <div class="event-item__title">Clubul de lectură</div>
+          <div class="event-item__desc">Discuții despre cărți și recomandări literare.</div>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-item__date">
+          <span class="event-item__day">5</span>
+          <span class="event-item__month">Jun</span>
+        </div>
+        <div class="event-item__body">
+          <div class="event-item__title">Atelier de scriere creativă</div>
+          <div class="event-item__desc">Învață tehnici moderne de scriere.</div>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-item__date">
+          <span class="event-item__day">15</span>
+          <span class="event-item__month">Jun</span>
+        </div>
+        <div class="event-item__body">
+          <div class="event-item__title">Lansare de carte</div>
+          <div class="event-item__desc">Prezentarea unei noi apariții editoriale.</div>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-item__date">
+          <span class="event-item__day">20</span>
+          <span class="event-item__month">Jun</span>
+        </div>
+        <div class="event-item__body">
+          <div class="event-item__title">Ora poveștilor</div>
+          <div class="event-item__desc">Activități pentru copii și familii.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Calendar evenimente</div>
+    <div class="calendar-wrap">
+      <div class="calendar-nav">
+        <button class="cal-arrow" id="prevMonth" aria-label="Luna precedentă">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="cal-selects">
+          <select id="calMonth">
+            <option value="0">Ianuarie</option>
+            <option value="1">Februarie</option>
+            <option value="2">Martie</option>
+            <option value="3">Aprilie</option>
+            <option value="4">Mai</option>
+            <option value="5" selected>Iunie</option>
+            <option value="6">Iulie</option>
+            <option value="7">August</option>
+            <option value="8">Septembrie</option>
+            <option value="9">Octombrie</option>
+            <option value="10">Noiembrie</option>
+            <option value="11">Decembrie</option>
+          </select>
+          <select id="calYear">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026" selected>2026</option>
+          </select>
+        </div>
+        <button class="cal-arrow" id="nextMonth" aria-label="Luna următoare">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <table class="cal-grid" id="calTable">
+        <thead>
+          <tr>
+            <th>Du</th><th>Lu</th><th>Ma</th><th>Mi</th><th>Joi</th><th>Vi</th><th>Să</th>
+          </tr>
+        </thead>
+        <tbody id="calBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__title">Galerie evenimente</div>
+    <div class="gallery">
+      <div class="gallery-img">
+        <img src="https://images.openai.com/static-rsc-4/V3Ckf0gNLqYPlmQjTsbj__pIITjtez-RCTXOFZj3dQ5uwS_hFtfo2r2izJ9VCeWQRADuqgque_i0Da_qSHBV6_K_RAzSD21Dp_3PEmmxy384q4jZNeflAVufpM9kJqV5t1YFucMdUxAg_7PsL-tTX_ctAcMA9AJLojVveC0W45Rs4H1xmR8xpqw5S86p2U9F?purpose=fullsize"
+             alt="Eveniment biblioteca 1" />
+      </div>
+      <div class="gallery-img">
+        <img src="https://images.openai.com/static-rsc-4/1oL9wuLyU7bSfxsjp7PypjLwu0F5TK7Mca2VEhCM8-za92yzZDgJGL6oRa14FwXan8dOqnimb_7tQ0dC09cZ-pneKKBbhzHHhK0_Ghj-f_zi72m8RAFtCTtQGBxsHtUBztmkyTe-r8dPPSB5iMsfdcAcPKRoNYzYxl-iIKEakfwcjwezAE4b_-fzaXq7MlQ5?purpose=fullsize"
+             alt="Eveniment biblioteca 2" />
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="events-cta">
+  <a href="#" class="btn btn--outline">Vezi toate evenimentele</a>
+</div>
+
+<footer>
+  <div class="footer__inner">
+
+    <div class="footer__brand">
+      <div class="logo-text">
+        <img src="logo-biblioteca.png" alt="Logo" style="width:40px;height:40px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;">
+            Biblioteca Cahul
+          </div>
+      <div class="tagline">Cunoaște. Citește. <span>Inspiră-te.</span></div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Meniu</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog Cărți</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="evenimente.html" class="active">Evenimente</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Servicii:</h4>
+      <ul>
+        <li><a href="#">Împrumut cărți</a></li>
+        <li><a href="#">Sală de lectură</a></li>
+        <li><a href="#">Internet gratuit</a></li>
+        <li><a href="#">Activități educative</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Program:</h4>
+      <p>
+        Luni — Vineri: 09:00 — 18:00<br>
+        Sâmbătă: 10:00 — 16:00<br>
+        Duminică: Închis
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact:</h4>
+      <div class="contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Str. Mihai Frunze 2, Cahul
+      </div>
+      <div class="contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +373 299 25 234
+      </div>
+      <div class="contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8922a"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        biblioteca.cahul@example.md
+      </div>
+    </div>
+
+  </div>
+  <div class="footer__bottom">
+    © 2024 Biblioteca Cahul. Toate drepturile rezervate.
+  </div>
+</footer>
+
+<script>
+  // ===== CALENDAR LOGIC =====
+  const eventDays = { 5: true, 15: true, 20: true, 25: true }; // days with events (Mai shown, Jun for demo)
+
+  const monthSel = document.getElementById('calMonth');
+  const yearSel  = document.getElementById('calYear');
+  const calBody  = document.getElementById('calBody');
+
+  function renderCalendar() {
+    const month = parseInt(monthSel.value);
+    const year  = parseInt(yearSel.value);
+
+    const today = new Date();
+    const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const daysInPrev  = new Date(year, month, 0).getDate();
+
+    calBody.innerHTML = '';
+    let day = 1;
+    let nextDay = 1;
+    let startOffset = firstDay; // Sunday=0
+
+    for (let row = 0; row < 6; row++) {
+      const tr = document.createElement('tr');
+      for (let col = 0; col < 7; col++) {
+        const td = document.createElement('td');
+        const cellIndex = row * 7 + col;
+
+        if (cellIndex < startOffset) {
+          // previous month
+          td.textContent = daysInPrev - startOffset + cellIndex + 1;
+          td.className = 'cal-other';
+        } else if (day > daysInMonth) {
+          // next month
+          td.textContent = nextDay++;
+          td.className = 'cal-other';
+        } else {
+          td.textContent = day;
+          if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+            td.className = 'cal-today';
+          } else if (eventDays[day]) {
+            td.className = 'cal-event';
+          }
+          day++;
+        }
+        tr.appendChild(td);
+      }
+      calBody.appendChild(tr);
+      if (day > daysInMonth && nextDay > 1) break;
+    }
+  }
+
+  document.getElementById('prevMonth').addEventListener('click', () => {
+    let m = parseInt(monthSel.value) - 1;
+    let y = parseInt(yearSel.value);
+    if (m < 0) { m = 11; y--; }
+    monthSel.value = m;
+    yearSel.value  = y;
+    renderCalendar();
+  });
+
+  document.getElementById('nextMonth').addEventListener('click', () => {
+    let m = parseInt(monthSel.value) + 1;
+    let y = parseInt(yearSel.value);
+    if (m > 11) { m = 0; y++; }
+    monthSel.value = m;
+    yearSel.value  = y;
+    renderCalendar();
+  });
+
+  monthSel.addEventListener('change', renderCalendar);
+  yearSel.addEventListener('change',  renderCalendar);
+
+  renderCalendar();
+</script>
+
+</body>
+</html>
